@@ -1,4 +1,4 @@
-#include "Dijkstra/dijkstra.h"
+#include "dijkstra.h"
 
 void addNodes(PathFinder *pathFinder)
 {
