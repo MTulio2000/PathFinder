@@ -1,6 +1,6 @@
 #include "dijkstra.h"
 
-void addNodes(PathFinder *pathFinder)
+void addNodes(Dijkstra *pathFinder)
 {
     pathFinder->addNode(1);
     pathFinder->addNode(2);
@@ -9,7 +9,7 @@ void addNodes(PathFinder *pathFinder)
     pathFinder->addNode(5);
     pathFinder->addNode(6);
 }
-void makeConnections(PathFinder *pathFinder)
+void makeConnections(Dijkstra *pathFinder)
 {
     pathFinder->makeConnect(1,2,4);
     pathFinder->makeConnect(1,4,3);
@@ -23,7 +23,7 @@ void makeConnections(PathFinder *pathFinder)
     pathFinder->makeConnect(3,4,2);
 }
 
-void print(PathFinder *pathFinder,int start,int end)
+void print(Dijkstra *pathFinder,int start,int end)
 {
     vector<int> path = pathFinder->findPath(start,end);
     for(int i:path)
